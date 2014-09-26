@@ -13,13 +13,15 @@ exports.config = {
   },*/
   multiCapabilities: [{
       'browserName': 'chrome'
+      'chromeOptions': {
+        args: ['--test-type']
+      }
   }, {
       'browserName': 'firefox'
-  }, {
-      'browserName': 'internet explorer'
-  },
-    {
-      'browserName': 'safari'
+  }, 
+   {
+      'browserName': 'phantomjs',
+      'phantomjs.binary.path': './node_modules/karma-phantomjs-launcher/node_modules/phantomjs/bin/phantomjs',
   }],
 
 
