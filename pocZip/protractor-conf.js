@@ -11,12 +11,12 @@ exports.config = {
   /*capabilities: {
     'browserName': 'safari'
   },*/
-  multiCapabilities: [{
+  multiCapabilities: [/*{
       'browserName': 'chrome'
       'chromeOptions': {
         args: ['--test-type']
       }
-  }, {
+  },*/ {
       'browserName': 'firefox'
   }, 
    {
